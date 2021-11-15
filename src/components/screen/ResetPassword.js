@@ -30,7 +30,7 @@ const ResetPassword = ({ match }) => {
 
     try {
       const { data } = await axios.put(
-        `/api/auth/resetpassword/${match.params.resetToken}`,
+        `https://reset-password-flow.herokuapp.com/api/auth/resetpassword/${match.params.resetToken}`,
         { password },
         config
       );

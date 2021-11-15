@@ -27,7 +27,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/login",
+        "https://reset-password-flow.herokuapp.com/api/auth/login",
         { email, password },
         config
       );

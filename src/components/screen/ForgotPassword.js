@@ -18,7 +18,7 @@ const ForgotPassword = () => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/forgotpassword",
+        "https://reset-password-flow.herokuapp.com/api/auth/forgotpassword",
         { email },
         config
       );
